@@ -1,0 +1,183 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  background: #eaeaeae;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #eaeaeae;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  perspective: 1000px;
+}
+
+.animate {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+
+.animate1 {
+  top: 0 !important;
+  opacity: 1 !important;
+}
+
+.page > div {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  perspective: 1000px;
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+  /*transition: top 0.6s linear;*/
+  position: absolute;
+  left: 50%;
+  top: 600px;
+  margin-left: -550px;
+}
+.page > div .left {
+  width: 470px;
+}
+.page > div .left div {
+  margin-top: 85px;
+}
+.page > div .left div img {
+  margin-right: 27px;
+  float: left;
+}
+.page > div .left div a {
+  width: 190px;
+  height: 60px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 20px;
+}
+.page > div .left div .a1 {
+  background: url("../../img/app/iPhone.png") no-repeat;
+}
+.page > div .left div .a1:hover {
+  background: url("../../img/app/iPhone-hover.png") no-repeat;
+}
+.page > div .left div .a2 {
+  background: url("../../img/app/Android.png") no-repeat;
+}
+.page > div .left div .a2:hover {
+  background: url("../../img/app/Android-hover.png") no-repeat;
+}
+.page > div .left div p {
+  overflow: hidden;
+  clear: both;
+  padding: 17px 0 0 28px;
+  color: #03527e;
+  font-size: 14px;
+}
+.page > div .left > img {
+  padding-top: 190px;
+  box-sizing: content-box;
+}
+.page > div .right {
+  width: 581px;
+  text-align: right;
+}
+
+.page1 {
+  background: url(../../img/app/bg1.png) no-repeat 100% 100%;
+}
+
+.page2 {
+  background: url(../../img/app/new-bg2.png) no-repeat 100% 100%;
+}
+.page2 .left div img {
+  width: 368px;
+  height: 280px;
+  padding-left: 95px;
+  margin-right: 0;
+  box-sizing: content-box;
+}
+
+.page3 {
+  background: url(../../img/app/new-bg4.png) no-repeat 100% 100%;
+}
+.page3 .left div img {
+  padding-left: 110px;
+  margin-right: 0;
+  box-sizing: content-box;
+}
+
+.page4 {
+  background: url(../../img/app/new-bg5.png) no-repeat 100% 100%;
+}
+.page4 .left div img {
+  padding-left: 110px;
+  margin-right: 0;
+  box-sizing: content-box;
+}
+
+.page5 {
+  background: url(../../img/app/new-bg6.png) no-repeat 100% 100%;
+}
+.page5 .left div img {
+  padding-left: 110px;
+  margin-right: 0;
+  box-sizing: content-box;
+}
+
+.pro-footer {
+  position: absolute;
+  z-index: 101;
+  background: white;
+  box-sizing: content-box;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.pro-footer .footer-container {
+  width: 1000px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+}
+.pro-footer .footer-container .container-left ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.pro-footer .footer-container .container-left ul li {
+  list-style: none;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #444;
+  border-right: 1px solid #ccc;
+}
+.pro-footer .footer-container .container-left ul li:last-child {
+  border: none;
+}
+.pro-footer .footer-container .container-right p {
+  text-align: right;
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1em;
+}
+.pro-footer .footer-container .container-right p a {
+  margin-top: 10px;
+  color: #666;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=app.css.map */

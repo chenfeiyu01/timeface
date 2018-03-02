@@ -1,0 +1,206 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  background: #eaeaeae;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #eaeaeae;
+}
+
+.sw5 {
+  width: 100%;
+  height: 100%;
+}
+.sw5 .swiper-wrapper {
+  height: 100%;
+}
+.sw5 .swiper-slide {
+  height: 100% !important;
+}
+.sw5 .swiper-slide:first-child {
+  background: url(../../img/cardU/bg.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+}
+.sw5 .swiper-slide:first-child .dingwei {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+.sw5 .swiper-slide:first-child .dingwei .left {
+  width: 50%;
+}
+.sw5 .swiper-slide:first-child .dingwei .right {
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sw5 .swiper-slide:first-child .dingwei .right .bottom {
+  width: 365px;
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.sw5 .swiper-slide:first-child .dingwei .right .bottom .b-left button:first-child {
+  margin-bottom: 28px;
+  background: url("../../img/cardU/ios.png") no-repeat 20px 12px;
+  display: block;
+  border: 2px solid #ffc63f;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  color: #ffc63f;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 30px;
+  width: 190px;
+}
+.sw5 .swiper-slide:first-child .dingwei .right .bottom .b-left button:first-child:hover {
+  background: url("../../img/cardU/ios-1.png") no-repeat 20px 12px #ffc63f;
+  color: white;
+}
+.sw5 .swiper-slide:first-child .dingwei .right .bottom .b-left button:last-child {
+  margin-bottom: 28px;
+  background: url("../../img/cardU/安卓.png") no-repeat 20px 12px;
+  display: block;
+  border: 2px solid #ffc63f;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  color: #ffc63f;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 30px;
+  width: 190px;
+}
+.sw5 .swiper-slide:first-child .dingwei .right .bottom .b-left button:last-child:hover {
+  background: url("../../img/cardU/android.png") no-repeat 20px 12px #ffc63f;
+  color: white;
+}
+.sw5 .swiper-slide:first-child .dingwei .right .bottom .b-right {
+  width: 148px;
+}
+.sw5 .swiper-slide:first-child .dingwei .right .bottom .b-right img {
+  width: 100%;
+}
+.sw5 .swiper-slide:first-child .dingwei .right p {
+  line-height: 50px;
+  color: white;
+}
+.sw5 .swiper-slide:nth-child(2) {
+  background: url(../../img/cardU/bg2.png) no-repeat 810px 80px;
+  background-color: #f8fbfc;
+  display: flex;
+  align-items: center;
+}
+.sw5 .swiper-slide:nth-child(2) div {
+  width: 1100px;
+  margin: 0 auto;
+  height: 400px;
+}
+.sw5 .swiper-slide:nth-child(2) div h2 {
+  display: block;
+  font-size: 60px;
+  font-weight: normal;
+  color: #3c455a;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-family: DeliciousRoman;
+}
+.sw5 .swiper-slide:nth-child(2) div p {
+  font-size: 30px;
+  color: #79808e;
+  font-family: DeliciousRoman;
+}
+.sw5 .swiper-slide:nth-child(3) {
+  background: url(../../img/cardU/bg3.png) no-repeat 0 100%;
+  display: flex;
+  align-items: center;
+}
+.sw5 .swiper-slide:nth-child(3) div {
+  height: 750px;
+  width: 1100px;
+  margin: 0 auto;
+}
+.sw5 .swiper-slide:nth-child(3) div h2 {
+  display: block;
+  font-size: 60px;
+  font-weight: normal;
+  color: #3c455a;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-family: DeliciousRoman;
+  text-align: center;
+}
+.sw5 .swiper-slide:nth-child(3) div p {
+  font-size: 30px;
+  color: #79808e;
+  font-family: DeliciousRoman;
+  text-align: center;
+}
+.sw5 .swiper-slide:nth-child(4) {
+  background: url(../../img/cardU/bg4.png) no-repeat 410px 80px;
+  background-color: #f8fbfc;
+  display: flex;
+  align-items: center;
+}
+.sw5 .swiper-slide:nth-child(4) div {
+  width: 1100px;
+  margin: 0 auto;
+  height: 500px;
+}
+.sw5 .swiper-slide:nth-child(4) div h2 {
+  display: block;
+  font-size: 60px;
+  font-weight: normal;
+  color: #3c455a;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-family: DeliciousRoman;
+  text-align: right;
+}
+.sw5 .swiper-slide:nth-child(4) div p {
+  font-size: 30px;
+  color: #79808e;
+  font-family: DeliciousRoman;
+  text-align: right;
+}
+.sw5 .swiper-slide:nth-child(5) {
+  background: url(../../img/cardU/bg5.png) no-repeat center;
+  display: flex;
+  align-items: center;
+}
+.sw5 .swiper-slide:nth-child(5) div {
+  height: 750px;
+  width: 1100px;
+  margin: 0 auto;
+}
+.sw5 .swiper-slide:nth-child(5) div h2 {
+  display: block;
+  font-size: 60px;
+  font-weight: normal;
+  color: #3c455a;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-family: DeliciousRoman;
+  text-align: center;
+}
+.sw5 .swiper-slide:nth-child(5) div p {
+  font-size: 30px;
+  color: #79808e;
+  font-family: DeliciousRoman;
+  text-align: center;
+}
+
+/*# sourceMappingURL=cardU.css.map */

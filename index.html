@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-app="app" ng-controller="ctrl">
+	<header>
+		<div id="header-left">
+			<img src="img/index/logo.png" alt="" id="logo">
+			<ul>
+				<li><a ui-sref="home">首页</a></li>
+				<li><a ui-sref="production">作品</a></li>
+				<li><a ui-sref="event">活动</a></li>
+				<li><a ui-sref="quan">时光圈</a></li>
+				<li><a ui-sref="cardU">时光印品<div class="sanjiao"></div></a>
+				<div class="caidan">
+					<div class="caidan-left">
+						<p><span>时光书</span><span>></span></p>
+						<p><span>照片书</span><span>></span></p>
+						<p><span>第三方导入</span><span>></span></p>
+						<p><span>个性印品</span><span>></span></p>
+					</div>
+					<div class="caidan-right">
+						<img src="img/index/caidan1.jpg" alt="">
+					</div>
+				</div>
+				</li>
+				<li><a ui-sref="app">客户端<div class="sanjiao"></div></a></li>
+			</ul>
+		</div>
+		<div id="header-right">
+			<div class="search">
+				<input type="text" value="搜索">
+				<span class="glyphicon glyphicon-search"></span>
+			</div>
+			<a href="">登录</a>
+			<a href="">注册</a>
+		</div>
+		<div class="bg">
+
+		</div>
+	</header>
+	<div id="toTop"></div>
+	<div id="logIn"></div>
+	<div ui-view id="view"></div>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular-1.4.6.min.js"></script>
+<script type="text/javascript" src="js/angular-ui-router.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+	/**/
+	function checkout(){
+			var t=document.documentElement.scrollTop||document.body.scrollTop;
+			if (t!=0){
+				$("header").css({background:"#2881e8"}).find(".bg").css({background:""})
+				$("header").find(".search").css({background:"#1E61AE"})
+			}else{
+				$("header").css({background:"transparent"}).find(".bg").css({background:"url(img/index/bg.png) repeat-x"});
+				$("header").find(".search").css({background:"rgba(0,0,0,0.25)"},200);
+			}
+				}
+		$("header").find("li").eq(0).find("a").css({borderBottom:"2px solid #fff"})
+		$("header").find("li").click(function(){
+			$(this).siblings("li").find("a").css({border:"none"});
+			$(this).find("a").css({
+				borderBottom:"2px solid #fff"
+			})
+		})
+
+			$(window).on("scroll",function(){
+				checkout()
+			})
+			$(".search").find("input").on("focus",function(){
+				checkout()
+				$(this).parent(".search").css({background:"white"});
+				$(this).parent(".search").css({width:"200px"}).find("span").css({color:"black"});
+				$(this).css({width:"160px",color:"black"});
+				$(this).val("");
+			})
+			$(".search").find("input").on("blur",function(){
+				checkout()
+				$(this).parent(".search").css({background:"rgba(0,0,0,0.25)"});
+				$(this).parent(".search").css({width:"75px"}).find("span").css({color:"white"});
+				$(this).css({width:"60%",color:"white"});
+				console.log($(this).text())
+				if ($(this).val()==""){
+					$(this).val("搜索");
+				}
+			})
+
+
+
+	var app=angular.module("app",["ui.router"]);
+	app.controller("ctrl",function($scope){
+
+	})
+	app.config(["$stateProvider","$urlRouterProvider",function($stateProvider,$urlRouterProvider){
+		$stateProvider.state("home",{
+			url:"/home",
+			templateUrl:"pages/home.html",
+			controller:function($scope){
+				var mysw=new Swiper(".sw1",{
+					direction:"vertical",
+					slidesPerView : 1,
+					autoplay:1000,
+					loop:true,
+					autoplayDisableOnInteraction:false,
+				})
+				var mysw2=new Swiper(".sw2",{
+					pagination:".swiper-pagination",
+					autoplay:3000,
+					paginationClickable :true,
+				})
+			}
+		})
+		.state("production",{
+			templateUrl:"pages/production/production.html",
+			url:"/production",
+			controller:function($scope){
+				var mysw3=new Swiper(".sw3",{
+					loop:true,
+					pagination:".swiper-pagination",
+				});
+				$(window).on("scroll",function(){
+					checkout()
+				})
+			}
+		})
+		.state("event",{
+			templateUrl:"pages/event/event.html",
+			url:"/event",
+			controller:function($scope){
+				var mysw4=new Swiper(".sw4",{
+					loop:true,
+					autoplay:3000,
+					pagination:".swiper-pagination"
+				})
+			}
+		})
+		.state("quan",{
+			templateUrl:"pages/quan/quan.html",
+			url:"/quan",
+		})
+		.state("cardU",{
+			templateUrl:"pages/cardU/cardU.html",
+			url:"/cardU",
+			controller:function($scope){
+				var mysw5=new Swiper(".sw5",{
+					direction : 'vertical',
+					speed:800,
+					simulateTouch : false,
+					mousewheelControl : true,
+				})
+				$(".swiper-slide").css({height:$(window).height()})
+			}
+		})
+		.state("app",{
+			templateUrl:"pages/app/app.html",
+			url:"/app",
+			controller:function($scope){
+				var t=document.documentElement.scrollTop||document.body.scrollTop;
+				var s=$(window).height();
+				var x=parseInt(t/s);
+				var y=Math.round(t/s);
+				console.log("scrollTop为"+t);
+				console.log("x为"+x)
+				$(".page").eq(x).css({position:"fixed",top:"0",left:"0",zIndex:x,marginTop:"0"});
+				$(".page").eq(x).prevAll().css({position:"fixed",top:"0",left:"0"});
+				$(".page").each(function(a,b){
+					$(".page").eq(a).css({zIndex:a})
+				})
+				$(".page").eq(x).nextAll(".page").css({position:"relative"});
+				$(".page").eq(x+1).css({marginTop:s*(x+1)+"px"}).siblings(".page").css({marginTop:"0"});
+				$(".page").eq(y).children("div").addClass("animate");
+				$(".pro-footer").css({position:"absolute",top:$(".page").length*s+"px"});
+			}
+		})
+		$urlRouterProvider.otherwise("/home")
+	}])
+</script>
+</html>

@@ -1,0 +1,761 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-family:"微软雅黑";
+	background:#eaeaeae;
+}
+html,body{
+	width:100%;
+	height:100%;
+	background:#eaeaeae;
+}
+.sw3{
+	width:100%;
+	img{
+		width:100%;
+	}
+	.swiper-pagination-bullet{
+		background:url(../../img/production/circle.png) no-repeat -26px 0;
+		width:8px;
+		height:8px;
+		box-sizing:content-box;
+		opacity:1;
+		margin:5px 9px!important;
+	}
+	.swiper-pagination-bullet-active{
+		background:white;
+	}
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+		margin:5px 9px!important;
+	}
+	.swiper-pagination{
+		bottom:0!important;
+	}
+}
+.pro-ad{
+	padding-top:60px;
+	padding-bottom:40px;
+	.pro-ad-content{
+		width:1020px;
+		margin:0 auto;
+		h2{
+			text-align:center;
+			padding-bottom:40px;
+			font-size:36px;
+			font-weight:400;
+			color:#333;
+		}
+		ul{
+			display:flex;
+			justify-content:space-around;
+			li{
+				list-style:none;
+				width:490px;
+				div{
+					width:100%;
+					overflow:hidden;
+					img{
+						width:100%;
+						transition:all 0.4s ease-in-out;
+					}
+				}
+				div:hover>img{
+					transform:scale(1.2)
+				}
+				h5{
+					margin:0;
+				    padding: 20px 0 10px;
+				    font-size: 22px;
+				    color: #333;
+				    font-weight: 400;
+				    margin-left: 10px;
+				    width: 480px;
+				    overflow: hidden;
+				    display: inline-block;
+				    white-space: nowrap;
+				    text-overflow: ellipsis;
+				}
+				p{
+				    color: #666;
+  			  		line-height: 24px;
+   					margin-left: 10px;
+   					font-size:14px;
+				}
+				button{
+					font-size:14px;
+					line-height:14px;
+				    display: inline-block;
+				    padding: 7px 15px;
+				    border-radius: 16px;
+				    margin: 5px;
+				    border: 1px solid #bebebe;
+				    color: #939393;
+				    background: #fff;
+				}
+			}
+		}
+	}
+}
+.user-produced{
+	padding-top:40px;
+	padding-bottom:20px;
+	background:#eaeaea;
+	h2{
+		text-align:center;
+		font-size:36px;
+		font-weight:400;
+	}
+	.timebook{
+		width:1100px;
+		margin:0 auto;
+		.time-book-head{
+			margin-bottom:30px;
+			display:flex;
+			align-items:center;
+			p:first-child{
+				margin-left:60px;
+			    font-size: 16px;
+			    color: #1a1a1a;
+			    line-height: 40px;
+			}
+			ul{
+				margin-left:30px;
+				display:flex;
+				width:840px;
+				height:40px;
+				li{
+					display:flex;
+					align-items:center;
+					list-style:none;
+					border-radius: 16px;
+				    margin: 5px 3px;
+				    border: 1px solid #bebebe;
+				    color: black;
+				    background: #fff;
+				    padding: 7px 15px;
+  					border-radius: 16px;
+  					font-size:14px;
+				}
+			}
+			p:last-child{
+				font-size:14px;
+			}
+		}
+		
+	}
+	.timebook>ul{
+			display:flex;
+			background:url("../../img/production/bookrack.png") no-repeat;
+			background-position:bottom ;
+			height:225px;
+			padding-left:13px;
+			margin-bottom:63px;
+			li{
+				list-style:none;
+				margin:0 37px;
+				.book{
+				    border-radius: 8px;
+				    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+				    border: 1px solid rgba(0,0,0,.2);
+				    width: 138px;
+				    height: 195px;
+				    vertical-align: middle;
+				    overflow:hidden;
+				    position:relative;
+				    div:nth-child(2){
+				   		background:url("../../img/production/bookside.png") no-repeat;
+				   		position:absolute;
+				   		width:100%;
+				   		height:100%;
+				   		top:0;
+				   		left:0;
+				    }
+				    .zhezhao{
+				    	width:100%;
+				    	height:100%;
+				    	position:absolute;
+				    	left:0;
+				    	top:100%;
+				    	transition:all 0.3s linear;
+				    	background:rgba(0,0,0,0.5);
+				    	box-sizing:border-box;
+				    	padding:24px 15px 0 20px;
+				    	p{
+				    		text-align:center;
+				    		color:white;
+				    		font-size:16px;
+				    	}
+				    	a{
+					    	position: absolute;
+						    bottom: 20px;
+						    display:inline-block;
+						    text-align:center;
+						    width:90px;
+						    color:white;
+						    border:1px solid white;
+						    left:50%;
+						    margin-left:-46px;
+				    	}
+				    }
+				    img{
+				    	width:100%;
+				    	height:100%;
+				    }
+				}
+			    .book:hover>.zhezhao{
+			    	top:0;
+			    }
+				p{
+					margin-top:25px;
+					text-align:center;
+					color: #9f9f9f;
+   					vertical-align: middle;
+   					font-size:14px;
+					img{
+						width:28px;
+						height:28px;
+						margin:0 2px;
+						margin-right:5px;
+					}
+				}
+			}
+		}
+
+
+
+		.photobook{
+			width:1100px;
+			margin:0 auto;
+			margin-top:103px;
+
+			.photobook-head{
+
+			margin-bottom:30px;
+			display:flex;
+			align-items:center;
+			p:first-child{
+				margin-left:60px;
+			    font-size: 16px;
+			    color: #1a1a1a;
+			    line-height: 40px;
+			}
+			ul{
+				margin-left:30px;
+				display:flex;
+				width:840px;
+				height:40px;
+				li{
+					display:flex;
+					align-items:center;
+					list-style:none;
+					border-radius: 16px;
+				    margin: 5px 3px;
+				    border: 1px solid #bebebe;
+				    color: black;
+				    background: #fff;
+				    padding: 7px 15px;
+  					border-radius: 16px;
+  					font-size:14px;
+				}
+			}
+			p:last-child{
+				font-size:14px;
+			}
+		}
+		}
+		.photobook>ul{
+			display:flex;
+			background:url("../../img/production/bookrack.png") no-repeat;
+			background-position:bottom ;
+			height:225px;
+			padding-left:13px;
+			margin-bottom:63px;
+			li{
+				list-style:none;
+				margin:0 37px;
+				.book{
+				    border-radius: 8px;
+				    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+				    border: 1px solid rgba(0,0,0,.2);
+				    width: 138px;
+				    height: 195px;
+				    vertical-align: middle;
+				    overflow:hidden;
+				    position:relative;
+				    div:nth-child(2){
+				   		background:url("../../img/production/bookside.png") no-repeat;
+				   		position:absolute;
+				   		width:100%;
+				   		height:100%;
+				   		top:0;
+				   		left:0;
+				    }
+				    .zhezhao{
+				    	width:100%;
+				    	height:100%;
+				    	position:absolute;
+				    	left:0;
+				    	top:100%;
+				    	transition:all 0.3s linear;
+				    	background:rgba(0,0,0,0.5);
+				    	box-sizing:border-box;
+				    	padding:24px 15px 0 20px;
+				    	p{
+				    		text-align:center;
+				    		color:white;
+				    		font-size:16px;
+				    	}
+				    	a{
+					    	position: absolute;
+						    bottom: 20px;
+						    display:inline-block;
+						    text-align:center;
+						    width:90px;
+						    color:white;
+						    border:1px solid white;
+						    left:50%;
+						    margin-left:-46px;
+				    	}
+				    }
+				    img{
+				    	width:100%;
+				    	height:100%;
+				    }
+				}
+			    .book:hover>.zhezhao{
+			    	top:0;
+			    }
+				p{
+					margin-top:25px;
+					text-align:center;
+					color: #9f9f9f;
+   					vertical-align: middle;
+   					font-size:14px;
+					img{
+						width:28px;
+						height:28px;
+						margin:0 2px;
+						margin-right:5px;
+					}
+				}
+			}
+		}
+		.photographybook{
+			width:1100px;
+			margin:0 auto;
+			margin-top:103px;
+
+			.photographybook-head{
+
+			margin-bottom:30px;
+			display:flex;
+			align-items:center;
+			p:first-child{
+				margin-left:60px;
+			    font-size: 16px;
+			    color: #1a1a1a;
+			    line-height: 40px;
+			}
+			ul{
+				margin-left:30px;
+				display:flex;
+				width:840px;
+				height:40px;
+				li{
+					display:flex;
+					align-items:center;
+					list-style:none;
+					border-radius: 16px;
+				    margin: 5px 3px;
+				    border: 1px solid #bebebe;
+				    color: black;
+				    background: #fff;
+				    padding: 7px 15px;
+  					border-radius: 16px;
+  					font-size:14px;
+				}
+			}
+			p:last-child{
+				font-size:14px;
+			}
+		}
+		}
+		.photographybook>ul{
+			display:flex;
+			background:url("../../img/production/bookrack.png") no-repeat;
+			background-position:bottom ;
+			height:225px;
+			padding-left:13px;
+			margin-bottom:63px;
+			li{
+				list-style:none;
+				margin:0 37px;
+				.book{
+				    border-radius: 8px;
+				    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+				    border: 1px solid rgba(0,0,0,.2);
+				    width: 138px;
+				    height: 195px;
+				    vertical-align: middle;
+				    overflow:hidden;
+				    position:relative;
+				    div:nth-child(2){
+				   		background:url("../../img/production/bookside.png") no-repeat;
+				   		position:absolute;
+				   		width:100%;
+				   		height:100%;
+				   		top:0;
+				   		left:0;
+				    }
+				    .zhezhao{
+				    	width:100%;
+				    	height:100%;
+				    	position:absolute;
+				    	left:0;
+				    	top:100%;
+				    	transition:all 0.3s linear;
+				    	background:rgba(0,0,0,0.5);
+				    	box-sizing:border-box;
+				    	padding:24px 15px 0 20px;
+				    	p{
+				    		text-align:center;
+				    		color:white;
+				    		font-size:16px;
+				    	}
+				    	a{
+					    	position: absolute;
+						    bottom: 20px;
+						    display:inline-block;
+						    text-align:center;
+						    width:90px;
+						    color:white;
+						    border:1px solid white;
+						    left:50%;
+						    margin-left:-46px;
+				    	}
+				    }
+				    img{
+				    	width:100%;
+				    	height:100%;
+				    }
+				}
+			    .book:hover>.zhezhao{
+			    	top:0;
+			    }
+				p{
+					margin-top:25px;
+					text-align:center;
+					color: #9f9f9f;
+   					vertical-align: middle;
+   					font-size:14px;
+					img{
+						width:28px;
+						height:28px;
+						margin:0 2px;
+						margin-right:5px;
+					}
+				}
+			}
+		}
+		.wechatbook{
+			width:1100px;
+			margin:0 auto;
+			margin-top:103px;
+
+			.wechatbook-head{
+
+			margin-bottom:30px;
+			display:flex;
+			align-items:center;
+			p:first-child{
+				margin-left:60px;
+			    font-size: 16px;
+			    color: #1a1a1a;
+			    line-height: 40px;
+			}
+			ul{
+				margin-left:30px;
+				display:flex;
+				width:840px;
+				height:40px;
+				li{
+					display:flex;
+					align-items:center;
+					list-style:none;
+					border-radius: 16px;
+				    margin: 5px 3px;
+				    border: 1px solid #bebebe;
+				    color: black;
+				    background: #fff;
+				    padding: 7px 15px;
+  					border-radius: 16px;
+  					font-size:14px;
+				}
+			}
+			p:last-child{
+				font-size:14px;
+			}
+		}
+		}
+		.wechatbook>ul{
+			display:flex;
+			background:url("../../img/production/bookrack.png") no-repeat;
+			background-position:bottom ;
+			height:225px;
+			padding-left:13px;
+			margin-bottom:63px;
+			li{
+				list-style:none;
+				margin:0 37px;
+				.book{
+				    border-radius: 8px;
+				    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+				    border: 1px solid rgba(0,0,0,.2);
+				    width: 138px;
+				    height: 195px;
+				    vertical-align: middle;
+				    overflow:hidden;
+				    position:relative;
+				    div:nth-child(2){
+				   		background:url("../../img/production/bookside.png") no-repeat;
+				   		position:absolute;
+				   		width:100%;
+				   		height:100%;
+				   		top:0;
+				   		left:0;
+				    }
+				    .zhezhao{
+				    	width:100%;
+				    	height:100%;
+				    	position:absolute;
+				    	left:0;
+				    	top:100%;
+				    	transition:all 0.3s linear;
+				    	background:rgba(0,0,0,0.5);
+				    	box-sizing:border-box;
+				    	padding:24px 15px 0 20px;
+				    	p{
+				    		text-align:center;
+				    		color:white;
+				    		font-size:16px;
+				    	}
+				    	a{
+					    	position: absolute;
+						    bottom: 20px;
+						    display:inline-block;
+						    text-align:center;
+						    width:90px;
+						    color:white;
+						    border:1px solid white;
+						    left:50%;
+						    margin-left:-46px;
+				    	}
+				    }
+				    img{
+				    	width:100%;
+				    	height:100%;
+				    }
+				}
+			    .book:hover>.zhezhao{
+			    	top:0;
+			    }
+				p{
+					margin-top:25px;
+					text-align:center;
+					color: #9f9f9f;
+   					vertical-align: middle;
+   					font-size:14px;
+					img{
+						width:28px;
+						height:28px;
+						margin:0 2px;
+						margin-right:5px;
+					}
+				}
+			}
+		}
+		.QQphotobook{
+			width:1100px;
+			margin:0 auto;
+			margin-top:103px;
+
+			.QQphotobook-head{
+
+			margin-bottom:30px;
+			display:flex;
+			align-items:center;
+			p:first-child{
+				margin-left:60px;
+			    font-size: 16px;
+			    color: #1a1a1a;
+			    line-height: 40px;
+			}
+			ul{
+				margin-left:30px;
+				display:flex;
+				width:840px;
+				height:40px;
+				li{
+					display:flex;
+					align-items:center;
+					list-style:none;
+					border-radius: 16px;
+				    margin: 5px 3px;
+				    border: 1px solid #bebebe;
+				    color: black;
+				    background: #fff;
+				    padding: 7px 15px;
+  					border-radius: 16px;
+  					font-size:14px;
+				}
+			}
+			p:last-child{
+				font-size:14px;
+			}
+		}
+		}
+		.QQphotobook>ul{
+			display:flex;
+			background:url("../../img/production/bookrack.png") no-repeat;
+			background-position:bottom ;
+			height:225px;
+			padding-left:13px;
+			margin-bottom:63px;
+			li{
+				list-style:none;
+				margin:0 37px;
+				.book{
+				    border-radius: 8px;
+				    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
+				    border: 1px solid rgba(0,0,0,.2);
+				    width: 138px;
+				    height: 195px;
+				    vertical-align: middle;
+				    overflow:hidden;
+				    position:relative;
+				    div:nth-child(2){
+				   		background:url("../../img/production/bookside.png") no-repeat;
+				   		position:absolute;
+				   		width:100%;
+				   		height:100%;
+				   		top:0;
+				   		left:0;
+				    }
+				    .zhezhao{
+				    	width:100%;
+				    	height:100%;
+				    	position:absolute;
+				    	left:0;
+				    	top:100%;
+				    	transition:all 0.3s linear;
+				    	background:rgba(0,0,0,0.5);
+				    	box-sizing:border-box;
+				    	padding:24px 15px 0 20px;
+				    	p{
+				    		text-align:center;
+				    		color:white;
+				    		font-size:16px;
+				    	}
+				    	a{
+					    	position: absolute;
+						    bottom: 20px;
+						    display:inline-block;
+						    text-align:center;
+						    width:90px;
+						    color:white;
+						    border:1px solid white;
+						    left:50%;
+						    margin-left:-46px;
+				    	}
+				    }
+				    img{
+				    	width:100%;
+				    	height:100%;
+				    }
+				}
+			    .book:hover>.zhezhao{
+			    	top:0;
+			    }
+				p{
+					margin-top:25px;
+					text-align:center;
+					color: #9f9f9f;
+   					vertical-align: middle;
+   					font-size:14px;
+					img{
+						width:28px;
+						height:28px;
+						margin:0 2px;
+						margin-right:5px;
+					}
+				}
+			}
+		}
+}
+.smallbook{
+	height:138px!important;
+	margin-top:58px;
+	.zhezhao{
+		p{
+			margin-top:0!important;
+		}
+	}
+}
+.pro-footer{
+	background:white;
+	height:90px;
+	width:100%;
+	padding-top:30px;
+	padding-bottom:30px;
+	.footer-container{
+		width:1000px;
+		padding:0;
+		margin:0 auto;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		box-sizing:content-box;
+		.container-left{
+			ul{
+				display:flex;
+				margin:0;
+				padding:0;
+				li{
+					list-style:none;
+					padding:0 14px;
+					font-size:14px;
+					color:#444;
+					border-right:1px solid #ccc;
+				}
+				li:last-child{
+					border:none;
+				}
+			}
+		}
+		.container-right{
+			
+			p{
+				text-align:right;
+				color:#666;
+				font-size:14px;
+				margin:0;
+				line-height:1.4em;
+				a{
+					margin-top:10px;
+					color:#666;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1118px) {
+	html,body{
+		width:1118px;
+	}
+	.sw3{
+		width:1118px;
+	}
+}
